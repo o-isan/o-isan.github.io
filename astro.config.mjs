@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://o-isan.github.io',
-  base: '/oisandev/',           // 👈 muy importante, se queda en '/' porque este repo es el "especial"
+  base: '/',           // 👈 muy importante, se queda en '/' porque este repo es el "especial"
   output: 'static',
   integrations: [mdx(), sitemap(), tailwind()],
 });
