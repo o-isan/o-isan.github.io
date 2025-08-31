@@ -4,8 +4,8 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://oisandev.github.io/oisandev',
-  base: '/oisandev',           // 👈 muy importante, se queda en '/' porque este repo es el "especial"
+  site: 'https://o-isan.github.io/',
+  base: '/',           // 👈 muy importante, se queda en '/' porque este repo es el "especial"
   output: 'static',
   integrations: [mdx(), sitemap(), tailwind()],
 });
