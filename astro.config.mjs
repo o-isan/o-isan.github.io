@@ -5,5 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://o-isan.github.io',
-  integrations: [mdx(), sitemap(), tailwind()]
+  integrations: [mdx(), sitemap(), tailwind()],
+  base: '/oisandev/',
+  output: 'static',
 });
