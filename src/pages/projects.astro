@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Proyectos:</div>
+  </div>
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Tienda online (TFG)"
+    img="/projects/tienda-online.png"
+    desc="Una tienda online en la que se pueden vender productos físicos, digitales y hacer una propuesta a medida. Este fue mi proyecto de TFG de DAW. Usé PHP, MySQL, HTML5, CSS3, JS, y HTML"
+    url="https://github.com/o-isan/tienda-online-tfg"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Mercaprójimo"
+    img="/projects/mercaprojimo.png"
+    desc="Una web que conecta a particulares que desean comprar y vender objetos de segunda mano. Se registran y se envían mensajes a través del chat. Para este proyecto usé PHP, MySQL, HTML5, CSS3, JS, y HTML."
+    url="https://github.com/o-isan/mercaprojimo"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="'Portfolio' en Django"
+    img="/projects/portfolio.png"
+    desc="Un sitio web hecho con Django sobre las distintas materias que se aprenden en el primer curso del ciclo formativo de grado superior (DAW). Se trató de una práctica para hacer un portfolio en base a lo aprendido en el primer curso del ciclo."
+    url="https://github.com/o-isan/pagina-django"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Cervantext"
+    img="/projects/cervantext.png"
+    desc="Un procesador de textos en Java que te permite redactar documentos web. Inspirado en el procesador de textos Gutenberg, de Wordpress"
+    url="https://github.com/o-isan/cervantext"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Caligari Studio"
+    img="/projects/caligari-studio.jpg"
+    desc="Una aplicación multiplataforma en python que te permite tocar distintos instrumentos musicales como la guitarra, el piano, el xiolofono o la flauta"
+    url="https://github.com/o-isan/caligari-studio"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Buffet Gestor"
+    img="/projects/buffet-gestor.jpg"
+    desc="Una aplicación multiplataforma en python que te permite llevar las finanzas personales del día a día. Ingresos, gastos, pasivos, activos ... etc"
+    url="https://github.com/o-isan/buffet-gestor"
+  />
+
+  <div class="divider my-0"></div>
+  
+</BaseLayout>

@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Mi curriculum Vitae</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Soy Óscar de la Iglesia Santacruz. Desarrollador backend y entusiasta del web scraping.
+    Natural de la provincia de Soria.
+    Me encanta aprender nuevas tecnologías y mejorar mis habilidades de programación.
+    Siendo DevOps y arquitectura de software dos de las áreas que más me interesan.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educación</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes"
+      subtitle="De 2022 a 2023 en IES Virgen del Espino, Soria. España"
+    />
+    <TimeLineElement
+      title="Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web"
+      subtitle="De 2023 a 2025 en IES Virgen del Espino, Soria. España"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experiencia</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="FCT en Sistemas Microinformáticos y Redes"
+      subtitle="De Marzo de 2023 a Junio de 2023, en CIEMAT-CEDER, Soria, España"
+    >
+    <ul>
+      <li>Reparación de PCs del personal y cableado de red.</li>
+      <li class="mt-2">Auxiliar en diagnóstico de maquinaria industrial e infrestructura de red.</li>
+      <li class="mt-2">Mantenimiento de servidores.</li>
+      <li class="mt-2">Instalación y configuración de software.</li>
+      <li class="mt-2 mb-6">Inventario de hardware.</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="FCT en Desarrollo de Aplicaciones Web"
+      subtitle="De Febrero de 2025 a Mayo de 2025, en Netytec, Soria, España"
+    >
+    <ul>
+      <li class="mt-2">Mantenimiento de un sistema de web scraping para distintos periódicos.</li>
+      <li class="mt-2">Adición de nuevas fuentes de información web.</li>
+      <li class="mt-2 mb-6">Desarrollo de un nuevo sistema de scraping asíncrono usando Scrapy y Twisted (python)</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Desarrollador Backend y web scraper"
+      subtitle="De Julio de 2025 a actualidad en Netytec, Soria, España"
+    >
+    <ul>
+      <li class="mt-2">Desarrollo de API REST.</li>
+      <li class="mt-2">Mantenimiento de un sistema de web scraping para distintos periódicos.</li>
+      <li class="mt-2">Extracción automatizada de datos de contacto de empresas</li>
+      <li class="mt-2 mb-6">Extracción automatizada de precios de hoteles.</li>
+    </ul>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certificaciones</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://coursera.org/verify/RQZVR5Z2W4U8" target="_blank"> Curso de React de Meta, en Coursera</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/hklZ?_gl=1*8gp4lc*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de MongoDB, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/R3WEQ?_gl=1*j0fvwz*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de creación y administración de BBDD SQL, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/TJGX?_gl=1*17xfbpq*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de Python PCAP, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/L98g?_gl=1*o71hsb*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso Docker, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/dFKT?_gl=1*o71hsb*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de Fundamentos de la orquestación y automatización IT, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/BlUE?_gl=1*j0fvwz*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de Spring Framework, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/d9Rpj?_gl=1*13dbuvq*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de GIT, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/RiGT?_gl=1*1ih5ql9*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de PHP - Apliando conceptos, en OpenWebinars</a>
+    </li>
+    <li>
+      <a href="https://openwebinars.net/cert/6dpF?_gl=1*1f5r4lg*_gcl_au*MTcwMTI3NjE4Ni4xNzU0MDgxMTE1LjMyMzE1NTI0OC4xNzU2MTQ1NDM1LjE3NTYxNDU0Mzk." target="_blank"> Curso de Javascript avanzado, en OpenWebinars</a>
+    </li>
+
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Comunicación asertiva</li>
+    <li>Trabajo en equipo</li>
+    <li>Inglés</li>
+    <li>Git</li>
+    <li>Docker</li>
+    <li>Python</li>
+    <li>Java</li>
+  </ul>
+</BaseLayout>

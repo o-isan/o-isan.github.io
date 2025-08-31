@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="services">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Servicios</div>
+  </div>
+
+  <HorizontalCard
+    title="Hago tu próxima landing page"
+    img="/services/landing-page.png"
+    desc="Las landing pages son esenciales para captar nuevos clientes y aumentar las conversiones. Puedo crear una landing page atractiva, optimizada para SEO y adaptada a dispositivos móviles que destaque los beneficios de tu producto o servicio."
+    url="mailto:oscar.iglsan@gmail.com"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Hago tu tienda online"
+    img="/services/eccommerce.jpg"
+    desc="La integro con pasarelas de pago como Stripe, PayPal. Y si lo deseas la hago con Wordpress u otro CMS para que puedas añadir nuevos productos fácil."
+    url="mailto:oscar.iglsan@gmail.com"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Extraigo datos de un sitio web"
+    img="/services/scraping.jpg"
+    desc="Amazon, ebay, Zillow, Idealista, Linkedin, Fotocasa, ... etc. Si no es ninguna de estos, contáctame y vemos si puedo ayudarte."
+    url="mailto:oscar.iglsan@gmail.com"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Solución a medida"
+    img="/services/other.jpg"
+    desc="Si no es ninguno de los servicios que ofrezco, contáctame y hablamos"
+    url="mailto:oscar.iglsan@gmail.com"
+  />
+
+</BaseLayout>
