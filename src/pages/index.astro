@@ -5,7 +5,6 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -23,7 +22,31 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">Mis proyectos: </div>
+    <div class="text-3xl w-full font-bold mb-1">Mis proyectos: </div>
+  </div>
+
+  <div>
+    <div class="text-2xl w-full font-bold mb-2">Web scraping: </div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Sitios web y aplicaciones: </div>
   </div>
 
   <HorizontalCard
@@ -41,9 +64,9 @@ const last_posts = posts.slice(0, 3);
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="'Portfolio' en Django"
+    title="Portfolio en Django"
     img="/projects/portfolio.png"
-    desc="Un sitio web hecho con Django sobre las distintas materias que se aprenden en el primer curso del ciclo formativo de grado superior (DAW). Se trató de una práctica para hacer un portfolio en base a lo aprendido en el primer curso del ciclo."
+    desc="Un sitio web hecho con Django sobre las distintas materias que se aprenden en el módulo Lenguajes de Marcado, primer curso del ciclo formativo de grado superior (DAW). Se trató de una práctica para mostrar lo aprendido en el módulo."
     url="https://github.com/o-isan/pagina-django"
   />
   <div class="divider my-0"></div>
