@@ -6,7 +6,7 @@ heroImage: "/projects/scraping/1.png"
 tags: ["web scraping", "python"]
 ---
 
-En este proyecto obtuve +5000 datasets de alojamientos turísticos de andalucia.org
+En este proyecto obtuve +5000 datasets de alojamientos turísticos
 con los siguientes campos: nombre del alojamiento, correo electrónico, sitio web, id propiedad.
 
 El script obtiene los datos y los va introduciendo en un archivo csv.
